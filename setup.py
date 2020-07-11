@@ -1,12 +1,12 @@
-"""Set up for the Tahoe LTI Customizations package."""
+"""Set up for the UrFU LTI Customizations package."""
 
 from setuptools import setup
 
 setup(
-    name='tahoe-lti',
+    name='urfu-lti',
     version='0.2.0',
-    description='Tahoe LTI Customizations package.',
+    description='UrFU LTI Customizations package.',
     packages=[
-        'tahoe_lti',
+        'urfu_lti',
     ],
 )
