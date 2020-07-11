@@ -1,10 +1,4 @@
-import logging
-
 from xblock_helpers import get_xblock_user
-
-log = logging.getLogger(__name__)
-
-log.warning("!!!!!!!!!!!!!!!!!!!!!!!!!!!!! urfu-lti")
 
 
 def basic_user_info(xblock):
