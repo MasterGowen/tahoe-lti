@@ -12,14 +12,19 @@ $ pip install git+https://github.com/MasterGowen/urfu-lti.git
 
 Добавьте следующие настройки:
 
-```yaml
-EDXAPP_XBLOCK_SETTINGS:
-  lti_consumer:
-    parameter_processors:
-      - 'urfu_lti.processors:basic_user_info'
-      - 'urfu_lti.processors:personal_user_info'
-      - 'urfu_lti.processors:cohort_info'
-      - 'urfu_lti.processors:team_info'
+```python
+EDXAPP_XBLOCK_SETTINGS = {
+   "lti_consumer":
+      {"parameter_processors":
+          [
+          'urfu_lti.processors:basic_user_info',
+          'urfu_lti.processors:personal_user_info',
+          'urfu_lti.processors:cohort_info',
+          'urfu_lti.processors:team_info'
+          ]
+       }
+  }
+ 
 ```
 
 **Важно!** 
